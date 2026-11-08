@@ -1,0 +1,476 @@
+digraph {
+	graph [concentrate=false dpi=400 forcelabels=true margin=0.1 nodesep=0.45 outputorder=edgesfirst overlap=false pad=0.2 rankdir=TB ranksep=1.0 ratio=compress size="6.3,9.0" splines=polyline]
+	node [height=0.4 margin="0.1,0.1"]
+	edge [arrowsize=1.5 labelangle=25 labeldistance=2.0 labelfloat=false]
+	dm_2_lower_in [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.7 shape=circle width=0.7]
+	hbw_1_get_empty_bucket_in [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	hbw_1_store_in [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	hbw_1_store_empty_bucket_in [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.7 shape=circle width=0.7]
+	hbw_2_store_empty_bucket_in [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	hbw_2_unload_in [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	hw_1_human_review_in [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.7 shape=circle width=0.7]
+	mm_2_drill_in [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.7 shape=circle width=0.7]
+	ov_2_burn_in [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	sm_2_transport_in [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.7 shape=circle width=0.7]
+	vgr_1_pick_up_and_transport_in [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	vgr_2_pick_up_and_transport_in [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	wt_2_pick_up_and_transport_in [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_dm_2_lower [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_hbw_1_get_empty_bucket [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_hbw_1_store [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_hbw_1_store_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_hbw_2_store_empty_bucket [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_hbw_2_unload [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_hw_1_human_review [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_mm_2_drill [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_ov_2_burn [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_sm_2_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_vgr_1_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_vgr_2_pick_up_and_transport [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_wt_2_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.7 shape=circle width=0.7]
+	failed_vgr_1_pick_up_and_transport [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.7 shape=circle width=0.7]
+	available_vgr_1_pick_up_and_transport [label=<&#9679;> color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.7 shape=circle width=0.7]
+	failed_wt_2_pick_up_and_transport [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.7 shape=circle width=0.7]
+	available_wt_2_pick_up_and_transport [label=<&#9679;> color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.7 shape=circle width=0.7]
+	failed_hbw_2_unload [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.7 shape=circle width=0.7]
+	available_hbw_2_unload [label=<&#9679;> color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.7 shape=circle width=0.7]
+	failed_hbw_2_store_empty_bucket [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.7 shape=circle width=0.7]
+	available_hbw_2_store_empty_bucket [label=<&#9679;> color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.7 shape=circle width=0.7]
+	failed_vgr_2_pick_up_and_transport [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.7 shape=circle width=0.7]
+	available_vgr_2_pick_up_and_transport [label=<&#9679;> color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_vgr_1_pick_up_and_transport_run3 [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	failed_sm_2_transport [label="" color=firebrick fixedsize=shape fontcolor=firebrick fontsize=50 height=0.7 shape=circle width=0.7]
+	available_sm_2_transport [label=<&#9679;> color=firebrick fixedsize=shape fontcolor=firebrick fontsize=50 height=0.7 shape=circle width=0.7]
+	human_worker_pressed_green_button_in [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	human_wer_pressed_red_button_in [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_start [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_vgr_1_pick_up_and_transport_run2 [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	vgr_1_pick_up_and_transport_run3_in [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	maintained_vgr_2_pick_up_and_transport [label="" color=purple fixedsize=shape fontcolor=purple fontsize=50 height=0.7 shape=circle width=0.7]
+	available_vgr_2_pick_up_and_transport [label=<&#9679;> color=purple fixedsize=shape fontcolor=purple fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_human_worker_pressed_green_button [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_human_wer_pressed_red_button [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	xor_join_human_worker_pressed_green_button_human_wer_pressed_red_button [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	vgr_1_pick_up_and_transport_run2_in [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	end_in [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.7 shape=circle width=0.7]
+	dm_2_lower [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="dm_2_lower
+lognormal
+"]
+	dm_2_lower_in -> dm_2_lower [color=black]
+	dm_2_lower -> xor_dm_2_lower [color=forestgreen]
+	hbw_1_get_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="hbw_1_get_empty_bucket
+lognormal
+"]
+	hbw_1_get_empty_bucket_in -> hbw_1_get_empty_bucket [color=black]
+	hbw_1_get_empty_bucket -> xor_hbw_1_get_empty_bucket [color=black]
+	hbw_1_store [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="hbw_1_store
+lognormal
+"]
+	hbw_1_store_in -> hbw_1_store [color=black]
+	hbw_1_store -> xor_hbw_1_store [color=forestgreen]
+	hbw_1_store_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="hbw_1_store_empty_bucket
+normal
+"]
+	hbw_1_store_empty_bucket_in -> hbw_1_store_empty_bucket [color=black]
+	hbw_1_store_empty_bucket -> xor_hbw_1_store_empty_bucket [color=black]
+	hbw_2_store_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="hbw_2_store_empty_bucket
+lognormal
+"]
+	hbw_2_store_empty_bucket_in -> hbw_2_store_empty_bucket [color=black]
+	hbw_2_store_empty_bucket -> xor_hbw_2_store_empty_bucket [color=black]
+	failed_hbw_2_store_empty_bucket -> hbw_2_store_empty_bucket [arrowhead=dot color=darkgoldenrod]
+	hbw_2_unload [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="hbw_2_unload
+lognormal
+"]
+	hbw_2_unload_in -> hbw_2_unload [color=black]
+	hbw_2_unload -> xor_hbw_2_unload [color=black]
+	failed_hbw_2_unload -> hbw_2_unload [arrowhead=dot color=darkgoldenrod]
+	hw_1_human_review [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="hw_1_human_review
+lognormal
+"]
+	hw_1_human_review_in -> hw_1_human_review [color=black]
+	hw_1_human_review -> xor_hw_1_human_review [color=forestgreen]
+	mm_2_drill [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="mm_2_drill
+lognormal
+"]
+	mm_2_drill_in -> mm_2_drill [color=black]
+	mm_2_drill -> xor_mm_2_drill [color=black]
+	ov_2_burn [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="ov_2_burn
+lognormal
+"]
+	ov_2_burn_in -> ov_2_burn [color=black]
+	ov_2_burn -> xor_ov_2_burn [color=black]
+	sm_2_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="sm_2_transport
+lognormal
+"]
+	sm_2_transport_in -> sm_2_transport [color=black]
+	sm_2_transport -> xor_sm_2_transport [color=black]
+	failed_sm_2_transport -> sm_2_transport [arrowhead=dot color=firebrick]
+	vgr_1_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="vgr_1_pick_up_and_transport
+lognormal
+"]
+	vgr_1_pick_up_and_transport_in -> vgr_1_pick_up_and_transport [color=black]
+	vgr_1_pick_up_and_transport -> xor_vgr_1_pick_up_and_transport [color=black]
+	failed_vgr_1_pick_up_and_transport -> vgr_1_pick_up_and_transport [arrowhead=dot color=darkgoldenrod]
+	vgr_2_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="vgr_2_pick_up_and_transport
+lognormal
+"]
+	vgr_2_pick_up_and_transport_in -> vgr_2_pick_up_and_transport [color=black]
+	vgr_2_pick_up_and_transport -> xor_vgr_2_pick_up_and_transport [color=black]
+	failed_vgr_2_pick_up_and_transport -> vgr_2_pick_up_and_transport [arrowhead=dot color=darkgoldenrod]
+	maintained_vgr_2_pick_up_and_transport -> vgr_2_pick_up_and_transport [arrowhead=dot color=purple]
+	wt_2_pick_up_and_transport [label="" color=royalblue fixedsize=shape fontcolor=royalblue fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="wt_2_pick_up_and_transport
+operational: pressure > 0.48 bar -> decrease speed
+EKS7"]
+	wt_2_pick_up_and_transport_in -> wt_2_pick_up_and_transport [color=black]
+	wt_2_pick_up_and_transport -> xor_wt_2_pick_up_and_transport [color=black]
+	failed_wt_2_pick_up_and_transport -> wt_2_pick_up_and_transport [arrowhead=dot color=darkgoldenrod]
+	loop_dm_2_lower_to_dm_2_lower [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_dm_2_lower -> loop_dm_2_lower_to_dm_2_lower [color=black]
+	loop_dm_2_lower_to_dm_2_lower -> dm_2_lower_in [color=black]
+	loop_dm_2_lower_to_hbw_2_store_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_dm_2_lower -> loop_dm_2_lower_to_hbw_2_store_empty_bucket [color=black]
+	loop_dm_2_lower_to_hbw_2_store_empty_bucket -> hbw_2_store_empty_bucket_in [color=black]
+	choice_dm_2_lower_to_hw_1_human_review [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_dm_2_lower -> choice_dm_2_lower_to_hw_1_human_review [color=black]
+	choice_dm_2_lower_to_hw_1_human_review -> hw_1_human_review_in [color=black]
+	loop_dm_2_lower_to_sm_2_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_dm_2_lower -> loop_dm_2_lower_to_sm_2_transport [color=black]
+	loop_dm_2_lower_to_sm_2_transport -> sm_2_transport_in [color=black]
+	choice_dm_2_lower_to_vgr_1_pick_up_and_transport [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+EKS8"]
+	xor_dm_2_lower -> choice_dm_2_lower_to_vgr_1_pick_up_and_transport [color=forestgreen]
+	choice_dm_2_lower_to_vgr_1_pick_up_and_transport -> vgr_1_pick_up_and_transport_in [color=forestgreen]
+	loop_hbw_1_get_empty_bucket_to_hbw_1_get_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_1_get_empty_bucket -> loop_hbw_1_get_empty_bucket_to_hbw_1_get_empty_bucket [color=black]
+	loop_hbw_1_get_empty_bucket_to_hbw_1_get_empty_bucket -> hbw_1_get_empty_bucket_in [color=black]
+	loop_hbw_1_get_empty_bucket_to_hw_1_human_review [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_1_get_empty_bucket -> loop_hbw_1_get_empty_bucket_to_hw_1_human_review [color=black]
+	loop_hbw_1_get_empty_bucket_to_hw_1_human_review -> hw_1_human_review_in [color=black]
+	choice_hbw_1_get_empty_bucket_to_vgr_1_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_1_get_empty_bucket -> choice_hbw_1_get_empty_bucket_to_vgr_1_pick_up_and_transport [color=black]
+	choice_hbw_1_get_empty_bucket_to_vgr_1_pick_up_and_transport -> vgr_1_pick_up_and_transport_in [color=black]
+	loop_hbw_1_store_to_hbw_1_store [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_1_store -> loop_hbw_1_store_to_hbw_1_store [color=black]
+	loop_hbw_1_store_to_hbw_1_store -> hbw_1_store_in [color=black]
+	loop_hbw_1_store_to_vgr_1_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_1_store -> loop_hbw_1_store_to_vgr_1_pick_up_and_transport [color=black]
+	loop_hbw_1_store_to_vgr_1_pick_up_and_transport -> vgr_1_pick_up_and_transport_in [color=black]
+	loop_hbw_1_store_empty_bucket_to_hbw_2_store_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_1_store_empty_bucket -> loop_hbw_1_store_empty_bucket_to_hbw_2_store_empty_bucket [color=black]
+	loop_hbw_1_store_empty_bucket_to_hbw_2_store_empty_bucket -> hbw_2_store_empty_bucket_in [color=black]
+	loop_hbw_1_store_empty_bucket_to_vgr_1_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_1_store_empty_bucket -> loop_hbw_1_store_empty_bucket_to_vgr_1_pick_up_and_transport [color=black]
+	loop_hbw_1_store_empty_bucket_to_vgr_1_pick_up_and_transport -> vgr_1_pick_up_and_transport_in [color=black]
+	loop_hbw_2_store_empty_bucket_to_hbw_2_store_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_2_store_empty_bucket -> loop_hbw_2_store_empty_bucket_to_hbw_2_store_empty_bucket [color=black]
+	loop_hbw_2_store_empty_bucket_to_hbw_2_store_empty_bucket -> hbw_2_store_empty_bucket_in [color=black]
+	choice_hbw_2_store_empty_bucket_to_mm_2_drill [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_2_store_empty_bucket -> choice_hbw_2_store_empty_bucket_to_mm_2_drill [color=black]
+	choice_hbw_2_store_empty_bucket_to_mm_2_drill -> mm_2_drill_in [color=black]
+	loop_hbw_2_store_empty_bucket_to_ov_2_burn [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_2_store_empty_bucket -> loop_hbw_2_store_empty_bucket_to_ov_2_burn [color=black]
+	loop_hbw_2_store_empty_bucket_to_ov_2_burn -> ov_2_burn_in [color=black]
+	choice_hbw_2_store_empty_bucket_to_vgr_1_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_2_store_empty_bucket -> choice_hbw_2_store_empty_bucket_to_vgr_1_pick_up_and_transport [color=black]
+	choice_hbw_2_store_empty_bucket_to_vgr_1_pick_up_and_transport -> vgr_1_pick_up_and_transport_in [color=black]
+	choice_hbw_2_store_empty_bucket_to_wt_2_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_2_store_empty_bucket -> choice_hbw_2_store_empty_bucket_to_wt_2_pick_up_and_transport [color=black]
+	choice_hbw_2_store_empty_bucket_to_wt_2_pick_up_and_transport -> wt_2_pick_up_and_transport_in [color=black]
+	loop_hbw_2_unload_to_hbw_2_unload [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_2_unload -> loop_hbw_2_unload_to_hbw_2_unload [color=black]
+	loop_hbw_2_unload_to_hbw_2_unload -> hbw_2_unload_in [color=black]
+	choice_hbw_2_unload_to_ov_2_burn [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_2_unload -> choice_hbw_2_unload_to_ov_2_burn [color=black]
+	choice_hbw_2_unload_to_ov_2_burn -> ov_2_burn_in [color=black]
+	choice_hbw_2_unload_to_vgr_2_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hbw_2_unload -> choice_hbw_2_unload_to_vgr_2_pick_up_and_transport [color=black]
+	choice_hbw_2_unload_to_vgr_2_pick_up_and_transport -> vgr_2_pick_up_and_transport_in [color=black]
+	choice_hw_1_human_review_to_hbw_1_get_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hw_1_human_review -> choice_hw_1_human_review_to_hbw_1_get_empty_bucket [color=black]
+	choice_hw_1_human_review_to_hbw_1_get_empty_bucket -> hbw_1_get_empty_bucket_in [color=black]
+	loop_hw_1_human_review_to_hw_1_human_review [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hw_1_human_review -> loop_hw_1_human_review_to_hw_1_human_review [color=black]
+	loop_hw_1_human_review_to_hw_1_human_review -> hw_1_human_review_in [color=black]
+	choice_hw_1_human_review_to_vgr_1_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hw_1_human_review -> choice_hw_1_human_review_to_vgr_1_pick_up_and_transport [color=black]
+	choice_hw_1_human_review_to_vgr_1_pick_up_and_transport -> vgr_1_pick_up_and_transport_in [color=black]
+	choice_hw_1_human_review_to_vgr_2_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_hw_1_human_review -> choice_hw_1_human_review_to_vgr_2_pick_up_and_transport [color=black]
+	choice_hw_1_human_review_to_vgr_2_pick_up_and_transport -> vgr_2_pick_up_and_transport_in [color=black]
+	loop_mm_2_drill_to_mm_2_drill [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_mm_2_drill -> loop_mm_2_drill_to_mm_2_drill [color=black]
+	loop_mm_2_drill_to_mm_2_drill -> mm_2_drill_in [color=black]
+	choice_mm_2_drill_to_sm_2_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_mm_2_drill -> choice_mm_2_drill_to_sm_2_transport [color=black]
+	choice_mm_2_drill_to_sm_2_transport -> sm_2_transport_in [color=black]
+	choice_mm_2_drill_to_wt_2_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_mm_2_drill -> choice_mm_2_drill_to_wt_2_pick_up_and_transport [color=black]
+	choice_mm_2_drill_to_wt_2_pick_up_and_transport -> wt_2_pick_up_and_transport_in [color=black]
+	choice_ov_2_burn_to_hbw_2_store_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_ov_2_burn -> choice_ov_2_burn_to_hbw_2_store_empty_bucket [color=black]
+	choice_ov_2_burn_to_hbw_2_store_empty_bucket -> hbw_2_store_empty_bucket_in [color=black]
+	loop_ov_2_burn_to_ov_2_burn [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_ov_2_burn -> loop_ov_2_burn_to_ov_2_burn [color=black]
+	loop_ov_2_burn_to_ov_2_burn -> ov_2_burn_in [color=black]
+	choice_ov_2_burn_to_wt_2_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_ov_2_burn -> choice_ov_2_burn_to_wt_2_pick_up_and_transport [color=black]
+	choice_ov_2_burn_to_wt_2_pick_up_and_transport -> wt_2_pick_up_and_transport_in [color=black]
+	choice_sm_2_transport_to_dm_2_lower [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_sm_2_transport -> choice_sm_2_transport_to_dm_2_lower [color=black]
+	choice_sm_2_transport_to_dm_2_lower -> dm_2_lower_in [color=black]
+	loop_sm_2_transport_to_sm_2_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_sm_2_transport -> loop_sm_2_transport_to_sm_2_transport [color=black]
+	loop_sm_2_transport_to_sm_2_transport -> sm_2_transport_in [color=black]
+	loop_vgr_1_pick_up_and_transport_to_dm_2_lower [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_vgr_1_pick_up_and_transport -> loop_vgr_1_pick_up_and_transport_to_dm_2_lower [color=black]
+	loop_vgr_1_pick_up_and_transport_to_dm_2_lower -> dm_2_lower_in [color=black]
+	loop_vgr_1_pick_up_and_transport_to_hbw_1_get_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_vgr_1_pick_up_and_transport -> loop_vgr_1_pick_up_and_transport_to_hbw_1_get_empty_bucket [color=black]
+	loop_vgr_1_pick_up_and_transport_to_hbw_1_get_empty_bucket -> hbw_1_get_empty_bucket_in [color=black]
+	choice_vgr_1_pick_up_and_transport_to_hbw_1_store [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_vgr_1_pick_up_and_transport -> choice_vgr_1_pick_up_and_transport_to_hbw_1_store [color=black]
+	choice_vgr_1_pick_up_and_transport_to_hbw_1_store -> hbw_1_store_in [color=black]
+	choice_vgr_1_pick_up_and_transport_to_hbw_1_store_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_vgr_1_pick_up_and_transport -> choice_vgr_1_pick_up_and_transport_to_hbw_1_store_empty_bucket [color=black]
+	choice_vgr_1_pick_up_and_transport_to_hbw_1_store_empty_bucket -> hbw_1_store_empty_bucket_in [color=black]
+	loop_vgr_1_pick_up_and_transport_to_hw_1_human_review [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_vgr_1_pick_up_and_transport -> loop_vgr_1_pick_up_and_transport_to_hw_1_human_review [color=black]
+	loop_vgr_1_pick_up_and_transport_to_hw_1_human_review -> hw_1_human_review_in [color=black]
+	loop_vgr_1_pick_up_and_transport_to_vgr_1_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_vgr_1_pick_up_and_transport -> loop_vgr_1_pick_up_and_transport_to_vgr_1_pick_up_and_transport [color=black]
+	loop_vgr_1_pick_up_and_transport_to_vgr_1_pick_up_and_transport -> vgr_1_pick_up_and_transport_in [color=black]
+	choice_vgr_2_pick_up_and_transport_to_hbw_1_store_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_vgr_2_pick_up_and_transport -> choice_vgr_2_pick_up_and_transport_to_hbw_1_store_empty_bucket [color=black]
+	choice_vgr_2_pick_up_and_transport_to_hbw_1_store_empty_bucket -> hbw_1_store_empty_bucket_in [color=black]
+	loop_vgr_2_pick_up_and_transport_to_hbw_2_store_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_vgr_2_pick_up_and_transport -> loop_vgr_2_pick_up_and_transport_to_hbw_2_store_empty_bucket [color=black]
+	loop_vgr_2_pick_up_and_transport_to_hbw_2_store_empty_bucket -> hbw_2_store_empty_bucket_in [color=black]
+	loop_vgr_2_pick_up_and_transport_to_hbw_2_unload [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_vgr_2_pick_up_and_transport -> loop_vgr_2_pick_up_and_transport_to_hbw_2_unload [color=black]
+	loop_vgr_2_pick_up_and_transport_to_hbw_2_unload -> hbw_2_unload_in [color=black]
+	loop_vgr_2_pick_up_and_transport_to_ov_2_burn [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_vgr_2_pick_up_and_transport -> loop_vgr_2_pick_up_and_transport_to_ov_2_burn [color=black]
+	loop_vgr_2_pick_up_and_transport_to_ov_2_burn -> ov_2_burn_in [color=black]
+	loop_vgr_2_pick_up_and_transport_to_vgr_2_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_vgr_2_pick_up_and_transport -> loop_vgr_2_pick_up_and_transport_to_vgr_2_pick_up_and_transport [color=black]
+	loop_vgr_2_pick_up_and_transport_to_vgr_2_pick_up_and_transport -> vgr_2_pick_up_and_transport_in [color=black]
+	choice_vgr_2_pick_up_and_transport_to_wt_2_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_vgr_2_pick_up_and_transport -> choice_vgr_2_pick_up_and_transport_to_wt_2_pick_up_and_transport [color=black]
+	choice_vgr_2_pick_up_and_transport_to_wt_2_pick_up_and_transport -> wt_2_pick_up_and_transport_in [color=black]
+	loop_wt_2_pick_up_and_transport_to_hbw_2_store_empty_bucket [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_wt_2_pick_up_and_transport -> loop_wt_2_pick_up_and_transport_to_hbw_2_store_empty_bucket [color=black]
+	loop_wt_2_pick_up_and_transport_to_hbw_2_store_empty_bucket -> hbw_2_store_empty_bucket_in [color=black]
+	loop_wt_2_pick_up_and_transport_to_mm_2_drill [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_wt_2_pick_up_and_transport -> loop_wt_2_pick_up_and_transport_to_mm_2_drill [color=black]
+	loop_wt_2_pick_up_and_transport_to_mm_2_drill -> mm_2_drill_in [color=black]
+	loop_wt_2_pick_up_and_transport_to_ov_2_burn [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_wt_2_pick_up_and_transport -> loop_wt_2_pick_up_and_transport_to_ov_2_burn [color=black]
+	loop_wt_2_pick_up_and_transport_to_ov_2_burn -> ov_2_burn_in [color=black]
+	loop_wt_2_pick_up_and_transport_to_sm_2_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_wt_2_pick_up_and_transport -> loop_wt_2_pick_up_and_transport_to_sm_2_transport [color=black]
+	loop_wt_2_pick_up_and_transport_to_sm_2_transport -> sm_2_transport_in [color=black]
+	loop_wt_2_pick_up_and_transport_to_wt_2_pick_up_and_transport [label="" color=black fixedsize=shape fontcolor=black fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+"]
+	xor_wt_2_pick_up_and_transport -> loop_wt_2_pick_up_and_transport_to_wt_2_pick_up_and_transport [color=black]
+	loop_wt_2_pick_up_and_transport_to_wt_2_pick_up_and_transport -> wt_2_pick_up_and_transport_in [color=black]
+	fail_vgr_1_pick_up_and_transport [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="fail_vgr_1_pick_up_and_transport
+normal
+"]
+	available_vgr_1_pick_up_and_transport -> fail_vgr_1_pick_up_and_transport [color=black]
+	fail_vgr_1_pick_up_and_transport -> failed_vgr_1_pick_up_and_transport [color=black]
+	restore_vgr_1_pick_up_and_transport [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="restore_vgr_1_pick_up_and_transport
+normal
+"]
+	failed_vgr_1_pick_up_and_transport -> restore_vgr_1_pick_up_and_transport [color=black]
+	restore_vgr_1_pick_up_and_transport -> available_vgr_1_pick_up_and_transport [color=black]
+	fail_wt_2_pick_up_and_transport [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="fail_wt_2_pick_up_and_transport
+lognormal
+"]
+	available_wt_2_pick_up_and_transport -> fail_wt_2_pick_up_and_transport [color=black]
+	fail_wt_2_pick_up_and_transport -> failed_wt_2_pick_up_and_transport [color=black]
+	restore_wt_2_pick_up_and_transport [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="restore_wt_2_pick_up_and_transport
+lognormal
+"]
+	failed_wt_2_pick_up_and_transport -> restore_wt_2_pick_up_and_transport [color=black]
+	restore_wt_2_pick_up_and_transport -> available_wt_2_pick_up_and_transport [color=black]
+	fail_hbw_2_unload [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="fail_hbw_2_unload
+exponential
+"]
+	available_hbw_2_unload -> fail_hbw_2_unload [color=black]
+	fail_hbw_2_unload -> failed_hbw_2_unload [color=black]
+	restore_hbw_2_unload [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="restore_hbw_2_unload
+lognormal
+"]
+	failed_hbw_2_unload -> restore_hbw_2_unload [color=black]
+	restore_hbw_2_unload -> available_hbw_2_unload [color=black]
+	fail_hbw_2_store_empty_bucket [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="fail_hbw_2_store_empty_bucket
+normal
+"]
+	available_hbw_2_store_empty_bucket -> fail_hbw_2_store_empty_bucket [color=black]
+	fail_hbw_2_store_empty_bucket -> failed_hbw_2_store_empty_bucket [color=black]
+	restore_hbw_2_store_empty_bucket [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="restore_hbw_2_store_empty_bucket
+normal
+"]
+	failed_hbw_2_store_empty_bucket -> restore_hbw_2_store_empty_bucket [color=black]
+	restore_hbw_2_store_empty_bucket -> available_hbw_2_store_empty_bucket [color=black]
+	fail_vgr_2_pick_up_and_transport [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="fail_vgr_2_pick_up_and_transport
+lognormal
+"]
+	available_vgr_2_pick_up_and_transport -> fail_vgr_2_pick_up_and_transport [color=black]
+	fail_vgr_2_pick_up_and_transport -> failed_vgr_2_pick_up_and_transport [color=black]
+	restore_vgr_2_pick_up_and_transport [label="" color=darkgoldenrod fixedsize=shape fontcolor=darkgoldenrod fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="restore_vgr_2_pick_up_and_transport
+lognormal
+"]
+	failed_vgr_2_pick_up_and_transport -> restore_vgr_2_pick_up_and_transport [color=black]
+	restore_vgr_2_pick_up_and_transport -> available_vgr_2_pick_up_and_transport [color=black]
+	vgr_1_pick_up_and_transport_run3 [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="vgr_1_pick_up_and_transport_run3
+EKS1"]
+	vgr_1_pick_up_and_transport_run3_in -> vgr_1_pick_up_and_transport_run3 [color=forestgreen]
+	vgr_1_pick_up_and_transport_run3 -> xor_vgr_1_pick_up_and_transport_run3 [color=forestgreen]
+	choice_vgr_1_pick_up_and_transport_run3_to_hbw_1_store [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+EKS1"]
+	xor_vgr_1_pick_up_and_transport_run3 -> choice_vgr_1_pick_up_and_transport_run3_to_hbw_1_store [color=forestgreen]
+	choice_vgr_1_pick_up_and_transport_run3_to_hbw_1_store -> hbw_1_store_in [color=forestgreen]
+	fail_sm_2_transport [label="" color=firebrick fixedsize=shape fontcolor=firebrick fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="fail_sm_2_transport
+*temp > 50 degree
+EKS2"]
+	available_sm_2_transport -> fail_sm_2_transport [color=firebrick]
+	fail_sm_2_transport -> failed_sm_2_transport [color=firebrick]
+	restore_sm_2_transport [label="" color=darkorange fixedsize=shape fontcolor=darkorange fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="restore_sm_2_transport
+triangular
+EKS14"]
+	failed_sm_2_transport -> restore_sm_2_transport [color=firebrick]
+	restore_sm_2_transport -> available_sm_2_transport [color=firebrick]
+	human_worker_pressed_green_button [label="" color=darkorange fixedsize=shape fontcolor=darkorange fontsize=50 height=0.3 shape=rectangle width=0.7 xlabel="human_worker_pressed_green_button
+uniform
+EKS11"]
+	human_worker_pressed_green_button_in -> human_worker_pressed_green_button [color=forestgreen]
+	human_worker_pressed_green_button -> xor_human_worker_pressed_green_button [color=forestgreen]
+	human_wer_pressed_red_button [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="human_wer_pressed_red_button
+EKS3"]
+	human_wer_pressed_red_button_in -> human_wer_pressed_red_button [color=forestgreen]
+	human_wer_pressed_red_button -> xor_human_wer_pressed_red_button [color=forestgreen]
+	choice_hw_1_human_review_to_human_worker_pressed_green_button [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+EKS3"]
+	xor_hw_1_human_review -> choice_hw_1_human_review_to_human_worker_pressed_green_button [color=forestgreen]
+	choice_hw_1_human_review_to_human_worker_pressed_green_button -> human_worker_pressed_green_button_in [color=forestgreen]
+	choice_hw_1_human_review_to_human_wer_pressed_red_button [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+EKS3"]
+	xor_hw_1_human_review -> choice_hw_1_human_review_to_human_wer_pressed_red_button [color=forestgreen]
+	choice_hw_1_human_review_to_human_wer_pressed_red_button -> human_wer_pressed_red_button_in [color=forestgreen]
+	start [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="start
+EKS4"]
+	start -> xor_start [color=forestgreen]
+	choice_start_to_hbw_2_unload [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+EKS4"]
+	xor_start -> choice_start_to_hbw_2_unload [color=forestgreen]
+	choice_start_to_hbw_2_unload -> hbw_2_unload_in [color=forestgreen]
+	vgr_1_pick_up_and_transport_run2 [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="vgr_1_pick_up_and_transport_run2
+EKS5"]
+	vgr_1_pick_up_and_transport_run2_in -> vgr_1_pick_up_and_transport_run2 [color=forestgreen]
+	vgr_1_pick_up_and_transport_run2 -> xor_vgr_1_pick_up_and_transport_run2 [color=forestgreen]
+	join_hbw_1_get_empty_bucket_and_vgr_1_pick_up_and_transport_run2_to_vgr_1_pick_up_and_transport_run3 [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+EKS5"]
+	xor_hbw_1_get_empty_bucket -> join_hbw_1_get_empty_bucket_and_vgr_1_pick_up_and_transport_run2_to_vgr_1_pick_up_and_transport_run3 [color=forestgreen]
+	xor_vgr_1_pick_up_and_transport_run2 -> join_hbw_1_get_empty_bucket_and_vgr_1_pick_up_and_transport_run2_to_vgr_1_pick_up_and_transport_run3 [color=forestgreen]
+	join_hbw_1_get_empty_bucket_and_vgr_1_pick_up_and_transport_run2_to_vgr_1_pick_up_and_transport_run3 -> vgr_1_pick_up_and_transport_run3_in [color=forestgreen]
+	fail_sm_2_transport_2 [label="" color=firebrick fixedsize=shape fontcolor=firebrick fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="fail_sm_2_transport_2
+*noise >= 90 decibels
+EKS6"]
+	available_sm_2_transport -> fail_sm_2_transport_2 [color=firebrick]
+	fail_sm_2_transport_2 -> failed_sm_2_transport [color=firebrick]
+	choice_hbw_1_store_to_vgr_1_pick_up_and_transport_run3 [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+EKS9"]
+	xor_hbw_1_store -> choice_hbw_1_store_to_vgr_1_pick_up_and_transport_run3 [color=forestgreen]
+	choice_hbw_1_store_to_vgr_1_pick_up_and_transport_run3 -> vgr_1_pick_up_and_transport_run3_in [color=forestgreen]
+	join_vgr_2_pick_up_and_transport_and_hbw_2_store_empty_bucket_to_ov_2_burn [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+EKS10"]
+	xor_vgr_2_pick_up_and_transport -> join_vgr_2_pick_up_and_transport_and_hbw_2_store_empty_bucket_to_ov_2_burn [color=forestgreen]
+	xor_hbw_2_store_empty_bucket -> join_vgr_2_pick_up_and_transport_and_hbw_2_store_empty_bucket_to_ov_2_burn [color=forestgreen]
+	join_vgr_2_pick_up_and_transport_and_hbw_2_store_empty_bucket_to_ov_2_burn -> ov_2_burn_in [color=forestgreen]
+	choice_hbw_2_unload_to_vgr_2_pick_up_and_transport_and_hbw_2_store_empty_bucket [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+EKS12"]
+	xor_hbw_2_unload -> choice_hbw_2_unload_to_vgr_2_pick_up_and_transport_and_hbw_2_store_empty_bucket [color=forestgreen]
+	choice_hbw_2_unload_to_vgr_2_pick_up_and_transport_and_hbw_2_store_empty_bucket -> vgr_2_pick_up_and_transport_in [color=forestgreen]
+	choice_hbw_2_unload_to_vgr_2_pick_up_and_transport_and_hbw_2_store_empty_bucket -> hbw_2_store_empty_bucket_in [color=forestgreen]
+	maintain_vgr_2_pick_up_and_transport [label="" color=purple fixedsize=shape fontcolor=purple fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="maintain_vgr_2_pick_up_and_transport
+*executions = 50000
+EKS13"]
+	available_vgr_2_pick_up_and_transport -> maintain_vgr_2_pick_up_and_transport [color=purple]
+	maintain_vgr_2_pick_up_and_transport -> maintained_vgr_2_pick_up_and_transport [color=purple]
+	maintain_vgr_2_pick_up_and_transport -> available_vgr_2_pick_up_and_transport [color=purple]
+	maintained_vgr_2_pick_up_and_transport -> maintain_vgr_2_pick_up_and_transport [color=purple]
+	choice_human_worker_pressed_green_button_to_xor_join_human_worker_pressed_green_button_human_wer_pressed_red_button [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+EKS15"]
+	xor_human_worker_pressed_green_button -> choice_human_worker_pressed_green_button_to_xor_join_human_worker_pressed_green_button_human_wer_pressed_red_button [color=forestgreen]
+	choice_human_worker_pressed_green_button_to_xor_join_human_worker_pressed_green_button_human_wer_pressed_red_button -> xor_join_human_worker_pressed_green_button_human_wer_pressed_red_button [color=forestgreen]
+	choice_human_wer_pressed_red_button_to_xor_join_human_worker_pressed_green_button_human_wer_pressed_red_button [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+EKS15"]
+	xor_human_wer_pressed_red_button -> choice_human_wer_pressed_red_button_to_xor_join_human_worker_pressed_green_button_human_wer_pressed_red_button [color=forestgreen]
+	choice_human_wer_pressed_red_button_to_xor_join_human_worker_pressed_green_button_human_wer_pressed_red_button -> xor_join_human_worker_pressed_green_button_human_wer_pressed_red_button [color=forestgreen]
+	and_split_human_worker_pressed_green_button_or_human_wer_pressed_red_button_to_hbw_1_get_empty_bucket_and_vgr_1_pick_up_and_transport_run2 [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+EKS15"]
+	xor_join_human_worker_pressed_green_button_human_wer_pressed_red_button -> and_split_human_worker_pressed_green_button_or_human_wer_pressed_red_button_to_hbw_1_get_empty_bucket_and_vgr_1_pick_up_and_transport_run2 [color=forestgreen]
+	and_split_human_worker_pressed_green_button_or_human_wer_pressed_red_button_to_hbw_1_get_empty_bucket_and_vgr_1_pick_up_and_transport_run2 -> hbw_1_get_empty_bucket_in [color=forestgreen]
+	and_split_human_worker_pressed_green_button_or_human_wer_pressed_red_button_to_hbw_1_get_empty_bucket_and_vgr_1_pick_up_and_transport_run2 -> vgr_1_pick_up_and_transport_run2_in [color=forestgreen]
+	fail_wt_2_pick_up_and_transport_2 [label="" color=firebrick fixedsize=shape fontcolor=firebrick fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="fail_wt_2_pick_up_and_transport_2
+*vibration > 7.1
+EKS16"]
+	available_wt_2_pick_up_and_transport -> fail_wt_2_pick_up_and_transport_2 [color=firebrick]
+	fail_wt_2_pick_up_and_transport_2 -> failed_wt_2_pick_up_and_transport [color=firebrick]
+	end [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="end
+EKS17"]
+	end_in -> end [color=forestgreen]
+	choice_hbw_1_store_to_end [label="" color=forestgreen fixedsize=shape fontcolor=forestgreen fontsize=50 height=0.3 shape=rectangle style=filled width=0.7 xlabel="
+EKS17"]
+	xor_hbw_1_store -> choice_hbw_1_store_to_end [color=forestgreen]
+	choice_hbw_1_store_to_end -> end_in [color=forestgreen]
+}

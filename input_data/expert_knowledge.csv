@@ -1,0 +1,18 @@
+statements;source;id
+When VGR_1_Pick_Up_And_Transport_Run3 is completed, then HBW_1_Store is happening.; expert1; EKS1
+There occurs a failure in SM_2_Transport, if the temperature sensor measures a value above 50 degree.; expert1; EKS2
+Upon completion of the event HW_1_Human_Review, either the events Human_Worker_Pressed_Green_Button or Human_Worker_Pressed_Red_Button are executed.; expert1; EKS3
+Trace 102 starts with the event HBW_2_Unload as only start event.; expert1; EKS4
+The event HBW_1_Get_Empty_Bucket is executed in parallel to VGR_1_Pick_Up_and_Transport_Run2. After both events are completed, the event VGR_1_Pick_Up_And_Transport_Run3 is executed.; expert1; EKS5
+SM_2_Transport fails if there is a loud noise above approximately 90 decibels.; expert1; EKS6
+If the sensor value capturing the pressure is above something like 0.48 bar, WT_2_Pick_Up_And_Transport operation speed is 1.5 times slower.; expert1; EKS7
+The event VGR_1_Pick_Up_And_Transport is executed after the event DM_2_Lower.; expert1; EKS8
+Before HBW_1_Store is executed VGR_1_Pick_Up_And_Transport_Run3 is completed.; expert1; EKS9
+After VGR_2_Pick_Up_And_Transport and HBW_2_Store_Empty_Bucket are happening simultaneously, OV_2_Burn is executed.; expert1; EKS10
+The event Human_Worker_Pressed_Green_Button has a uniform distribution with a  minimum of 2 minutes 3 seconds and maximum of 5 minutes 56 seconds.; expert1; EKS11
+After HBW_2_Unload, the events VGR_2_Pick_Up_And_Transport and HBW_2_Store_Empty_Bucket are executed at the same time.; expert1; EKS12
+Every 50000 executions of VGR_2_Pick_Up_And_Transport the battery needs to be changed.; expert1; EKS13
+The event Restore_SM_2_Transport is normally finished within 12 to 16 minutes in a triangular probability distribution.; expert1; EKS14
+After Human_Worker_Pressed_Green_Button or Human_Worker_Pressed_Red_Button, the events HBW_1_Get_Empty_Bucket AND VGR_1_Pick_Up_And_Transport_Run2 are executed in parallel.; expert1; EKS15
+If the sensor value for the vibration is equal or higher than 7.1, WT_2_Pick_Up_And_Transport will fail immediately.; expert1; EKS16
+The process end is a direct successor of HBW_1_Store.; expert1; EKS17

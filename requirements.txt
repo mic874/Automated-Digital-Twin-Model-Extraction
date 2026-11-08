@@ -1,0 +1,7 @@
+graphviz==0.20.1
+numpy==2.5.4
+pandas==3.1.1
+pm4py==2.7.16
+scipy==1.18.1
+torch==2.8.0
+transformers==4.44.2
