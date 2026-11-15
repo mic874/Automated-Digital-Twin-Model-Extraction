@@ -11,7 +11,7 @@ With this the approach implementation will be automatically executed with the ca
 ### Via git
 
 ```bash
-git clone https://gitlab.kit.edu/michelle.jungmann/dkdt-model-extraction.git  # 1. clone repository
+git clone https://github.com/mic874/Automated-Digital-Twin-Model-Extraction.git  # 1. clone repository
 pip install -r requirements.txt # 2. install the requirements.txt
 cd model_extraction # 3. navigate into the model extraction pipeline folder
 python main.py  # 4. run the model extraction pipeline
