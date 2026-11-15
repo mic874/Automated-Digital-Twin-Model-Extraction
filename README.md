@@ -1,7 +1,7 @@
 # Data-Knowledge-Fused Digital Twin Model Extraction
 # In the A Posteriori Model Extraction Strategy
 
-A lightweight tool for extracting Stochastic Petri Net models informed by both IoT data and expert knowledg in unstructured natural language.
+A lightweight tool for extracting Stochastic Petri Net models informed by both IoT data and expert knowledge in unstructured natural language.
 
 ## Getting Started
 
